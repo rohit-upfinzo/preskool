@@ -1,0 +1,62 @@
+.page {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 28px 16px;
+  background: var(--mantine-color-gray-0);
+}
+
+.brand {
+  flex-shrink: 0;
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+  padding: 24px;
+  background: var(--mantine-color-white);
+  border-color: var(--mantine-color-gray-2);
+  box-shadow: 0 10px 32px rgb(23 43 104 / 6%), 0 2px 4px rgb(23 43 104 / 3%);
+}
+
+.label {
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--mantine-color-brand-8);
+}
+
+.input {
+  min-height: 40px;
+  border-color: var(--mantine-color-gray-3);
+  background: var(--mantine-color-white);
+}
+
+.input:focus, .input:focus-within {
+  border-color: var(--mantine-color-brand-8);
+}
+
+.submit {
+  min-height: 40px;
+  box-shadow: 0 8px 18px rgb(30 58 138 / 16%);
+}
+
+.footer {
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .page {
+    padding: 28px 16px;
+    gap: 24px;
+  }
+
+  .card {
+    padding: 24px 20px;
+  }
+}
+
